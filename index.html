@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Antigravity test edit -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Code Smell Detector Compiler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ML Code Smell Detector Compiler</h1>
+        </header>
+
+        <div class="controls">
+            <div class="button-group">
+                <button id="vulnerableBtn" class="btn btn-danger">
+                    <i class="fas fa-bug"></i> Vulnerable Code
+                </button>
+                <button id="cleanBtn" class="btn btn-success">
+                    <i class="fas fa-shield-alt"></i> Clean Code
+                </button>
+                <button id="randomBtn" class="btn btn-info" style="background-color: #17a2b8;">
+                    <i class="fas fa-random"></i> Random ML Sample
+                </button>
+            </div>
+            <div class="button-group">
+                <button id="analyzeBtn" class="btn btn-warning">
+                    <i class="fas fa-microscope"></i> Analyze Smells
+                </button>
+                <button id="executeBtn" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Execute Code
+                </button>
+                <button id="clearBtn" class="btn btn-secondary">
+                    <i class="fas fa-eraser"></i> Clear
+                </button>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="code-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-code"></i> Source Code</h2>
+                    <span id="codeType" class="badge badge-info"><i class="fas fa-hand-pointer"></i> Select a
+                        sample</span>
+                </div>
+                <textarea id="codeEditor" class="code-editor" spellcheck="false"
+                    placeholder="Select a sample or type your own code here..."></textarea>
+            </div>
+
+            <div class="output-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-terminal"></i> Execution Results</h2>
+                    <span id="statusBadge" class="badge badge-info"><i class="fas fa-clock"></i> Ready</span>
+                </div>
+                <div id="outputDisplay" class="output-display">
+                    <p class="placeholder">Click "Execute Code" to see results...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
